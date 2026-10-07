@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MEDFLOW</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <aside>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">
+                    <p>GLICO HEALTH</p>
+                    <p>MEDFLOW</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Overview</a></li>
+                    <li><a href="#">Prescriptions<span>12</span></a></li>
+                    <li><a href="#">Assignments</a></li>
+                    <li><a href="#">Tracking</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </nav>
+
+                <footer>
+                    <a href="#">Help & support</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Secure clinical workspace</a>
+                </footer>
+        </aside>
+
+        <main>
+            <header>
+                <input type="search" placeholder="Search patient">
+                <div class="user">
+                    <div class="avatar">GA</div>
+                    <div>
+                        <p>Dr. Grace</p>
+                        <p class="claims">Claims Medical Officer</p>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div class="greeting">
+                    <div>
+                        <p>Tuesday, 6 October 2026</p>
+                        <h1>Good Morning, Dr. Addo</h1>
+                        <p>Here's the latest across prescription fulfillment</p>
+                    </div>
+                    <button>New prescription</button>
+                </div>
+
+                <div class="stats">
+                    <div class="card">
+                        <label class="label">Pending reviews</label>
+                        <p class="number">12</p>
+                        <p class="note">+3 today</p>
+                    </div>
+                    <div class="card">
+                        <label class="label">In fulfillment</label>
+                        <p class="number">28</p>
+                        <p class="note">Across 6 providers</p>
+                    </div>
+                    <div class="card">
+                        <label class="label">Out for delivery</label>
+                        <p class="number">16</p>
+                        <p class="note">4 arriving soon</p>
+                    </div>
+                    <div class="card">
+                        <label class="label">Completed today</label>
+                        <p class="number">42</p>
+                        <p class="note">96% on time</p>
+                    </div>                                                            
+                </div>
+
+                <div class="content">
+                    <div class="table-card">
+                        <div class="table-head">
+                            <h2>Recent prescriptions</h2>
+                            <p>Live status across the fulfillment network</p>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Patient</th>
+                                    <th>Medication</th>
+                                    <th>Service Provider</th>
+                                    <th>Status</th>
+                                    <th>Submitted</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Esi Mensah</td>
+                                        <td>Amlodipine 10mg</td>
+                                        <td>Ernest Chemists</td>
+                                        <td><span class="status pending">Pending review</span></td>
+                                        <td>05 Oct, 10:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kwame Asante</td>
+                                        <td>Metformin 500mg</td>
+                                        <td>HealthPlus Pharmacy</td>
+                                        <td><span class="status assigned">Assigned</span></td>
+                                        <td>05 Oct, 8:16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ama Boateng</td>
+                                        <td>Atorvastatin 20mg</td>
+                                        <td>Top-Up Pharmacy</td>
+                                        <td><span class="status fulfillment">In fulfillment</span></td>
+                                        <td>04 Oct, 16:55</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Joseph Tetteh</td>
+                                        <td>Losartan 50mg</td>
+                                        <td>Ernest Chemists</td>
+                                        <td><span class="status delivery">Out for delivery</span></td>
+                                        <td>04 Oct, 15:20</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+
+                    <div class="side-col">
+                        <div class="side-card">
+                            <div class="card-top">
+                                <h3>Fulfillment overview</h3>
+                                <span class="healthy">Healthy</span>
+                            </div>
+                            <div class="ring-row">
+                                <div class="ring">
+                                    <div class="ring-inner">86%</div>
+                                </div>
+                                <div>
+                                    <p>102 active</p>
+                                    <p>Across all providers</p>
+                                    <p>2h 14m</p>
+                                    <p>Average processing</p>  
+                                </div>                              
+                            </div>
+                            <div class="target-row">
+                                <p>Daily completion target</p>
+                                <p>42/50</p>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill"></div>
+                            </div>       
+                        </div>
+            
+                        <div class="side-card">
+                            <h3>Provider activity</h3>
+                            <div class="provider">
+                                <div class="initials">EC</div>
+                                <div>
+                                    <p>Ernest Chemists</p>
+                                    <p>34 active</p>
+                                </div>
+                                <span class="percent">94%</span>
+                            </div>
+                            <div class="provider">
+                                <div class="initials">HP</div>
+                                <div>
+                                    <p>HealthPlus Pharmacy</p>
+                                    <p>27 active</p>
+                                </div>
+                                <span class="percent">89%</span>                                
+                            </div>
+                            <div class="provider"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

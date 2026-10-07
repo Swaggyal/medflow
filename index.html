@@ -3,7 +3,12 @@
     <head>
         <title>MEDFLOW</title>
         <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -11,8 +16,8 @@
             <div class="logo">
                 <div class="logo-icon"></div>
                 <div class="logo-text">
-                    <p>GLICO HEALTH</p>
-                    <p>MEDFLOW</p>
+                    <p class="boss">GLICO HEALTH</p>
+                    <p class="sub">MEDFLOW</p>
                 </div>
             </div>
             <nav>
@@ -34,11 +39,11 @@
 
         <main>
             <header>
-                <input type="search" placeholder="Search patient">
+                <input type="search" placeholder="Search patient, prescription or provider">
                 <div class="user">
                     <div class="avatar">GA</div>
                     <div>
-                        <p>Dr. Grace</p>
+                        <p>Dr. Grace Addo</p>
                         <p class="claims">Claims Medical Officer</p>
                     </div>
                 </div>
@@ -47,9 +52,9 @@
             <section>
                 <div class="greeting">
                     <div>
-                        <p>Tuesday, 6 October 2026</p>
+                        <p class="date">Tuesday, 6 October 2026</p>
                         <h1>Good Morning, Dr. Addo</h1>
-                        <p>Here's the latest across prescription fulfillment</p>
+                        <p class="here">Here's the latest across prescription fulfillment</p>
                     </div>
                     <button>New prescription</button>
                 </div>
@@ -80,8 +85,21 @@
                 <div class="content">
                     <div class="table-card">
                         <div class="table-head">
-                            <h2>Recent prescriptions</h2>
-                            <p>Live status across the fulfillment network</p>
+                            <div>
+                                <h2>Recent prescriptions</h2>
+                                <p>Live status across the fulfillment network</p>
+                            </div>
+                            <div class="table-controls">
+                               <select>
+                                    <option>All Statuses</option>
+                                    <option>Pending Review</option>
+                                    <option>Assigned</option>
+                                    <option>In Fulfillment</option>
+                                    <option>Out for Delivery</option>
+                                    <option>Delivered</option>
+                                </select>
+                                <button class="history-btn">History</button>
+                            </div>
                         </div>
                         <table>
                             <thead>
@@ -124,8 +142,11 @@
                                     </tr>
                                 </tbody>
                         </table>
+                        <div class="table-footer">
+                            <p>Showing 4 of 98 prescriptions</p>
+                            <a href="#">View all</a>
+                        </div>
                     </div>
-
                     <div class="side-col">
                         <div class="side-card">
                             <div class="card-top">
@@ -137,10 +158,10 @@
                                     <div class="ring-inner">86%</div>
                                 </div>
                                 <div>
-                                    <p>102 active</p>
-                                    <p>Across all providers</p>
-                                    <p>2h 14m</p>
-                                    <p>Average processing</p>  
+                                    <p class="big">102 active</p>
+                                    <p class="note">Across all providers</p>
+                                    <p class="big">2h 14m</p>
+                                    <p class="note">Average processing</p>  
                                 </div>                              
                             </div>
                             <div class="target-row">
@@ -157,20 +178,27 @@
                             <div class="provider">
                                 <div class="initials">EC</div>
                                 <div>
-                                    <p>Ernest Chemists</p>
-                                    <p>34 active</p>
+                                    <p class="other">Ernest Chemists</p>
+                                    <p class="note">34 active</p>
                                 </div>
                                 <span class="percent">94%</span>
                             </div>
                             <div class="provider">
                                 <div class="initials">HP</div>
                                 <div>
-                                    <p>HealthPlus Pharmacy</p>
-                                    <p>27 active</p>
+                                    <p class="other">HealthPlus Pharmacy</p>
+                                    <p class="note">27 active</p>
                                 </div>
                                 <span class="percent">89%</span>                                
                             </div>
-                            <div class="provider"></div>
+                            <div class="provider">
+                                <div class="initials">TP</div>
+                                <div>
+                                    <p class="other">Top-Up Pharmacy</p>
+                                    <p class="note">19 active</p>
+                                </div>
+                                <span class="percent">91%</span>
+                            </div>
                         </div>
                     </div>
                 </div>

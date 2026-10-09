@@ -100,6 +100,14 @@ footer a{
     font-size: 13px;
 }
 
+footer a.secure{
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 11px;
+    margin: 8px 0 16px;
+}
+
 .active{
     background-color: white;
     color: #D40924;
@@ -244,6 +252,35 @@ td{
     font-size: 12px;
 }
 
+.patient{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-name{
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.p-id{
+    font-size: 11px;
+    color: grey;
+}
+
+.rx-row{
+    display: flex;
+    align-items: center;
+}
+
+.urgent{
+    color: #D40924;
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .history-btn{
     background-color: #F1F5F9;
     color: black;
@@ -330,15 +367,22 @@ select:focus{
     background-color: white;
     border-radius: 50%;
     display: flex;
+    flex-direction: column;
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+
+.yie{
+    color: #0A3F86;
 }
 
 .ring-row{
     display: flex;
     align-items: center;
     gap: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
 }
 
 .bar{
@@ -390,6 +434,7 @@ h1{
     font-size: 12px;
     color: gray;
     border-top: 1px solid #E2E8F0;
+    padding-top: 14px;
 }
 
 .user{
@@ -442,4 +487,37 @@ h3{
 .big{
     font-size: 15px;
     font-weight: bold;
+}
+
+.on-track{
+    font-size: 9px;
+    color: gray;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bell{
+    position: relative;
+    color: #64748B;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dot{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 7px;
+    height: 7px;
+    background-color: #D40924;
+    border-radius: 50%;
+}
+
+.arrow{
+    font-size: 10px;
+    color: #64748B;
 }

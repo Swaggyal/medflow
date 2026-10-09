@@ -3,12 +3,14 @@
     <head>
         <title>MEDFLOW</title>
         <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
 
     <body>
@@ -33,18 +35,25 @@
                 <footer>
                     <a href="#">Help & support</a>
                     <a href="#">Settings</a>
-                    <a href="#">Secure clinical workspace</a>
+                    <a href="#" class="secure">Secure clinical workspace</a>
                 </footer>
         </aside>
 
         <main>
             <header>
                 <input type="search" placeholder="Search patient, prescription or provider">
-                <div class="user">
-                    <div class="avatar">GA</div>
-                    <div>
-                        <p>Dr. Grace Addo</p>
-                        <p class="claims">Claims Medical Officer</p>
+                <div class="header-right">
+                    <div class="bell">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="user">
+                        <div class="avatar">GA</div>
+                        <div>
+                            <p>Dr. Grace Addo</p>
+                            <p class="claims">Claims Medical Officer</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
                     </div>
                 </div>
             </header>
@@ -113,28 +122,63 @@
                             </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Esi Mensah</td>
+                                        <td>
+                                            <div class="patient">
+                                                <div class="initials">EM</div>
+                                                <div>
+                                                    <p class="p-name">Esi Mensah</p>
+                                                    <div class="rx-row">
+                                                        <p class="p-id">RX-02418</p>
+                                                        <span class="urgent">Urgent</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>Amlodipine 10mg</td>
                                         <td>Ernest Chemists</td>
                                         <td><span class="status pending">Pending review</span></td>
                                         <td>05 Oct, 10:20</td>
                                     </tr>
                                     <tr>
-                                        <td>Kwame Asante</td>
+                                        <td>
+                                            <div class="patient">
+                                                <div class="initials">KA</div>
+                                                <div>
+                                                    <p class="p-name">Kwame Asante</p>
+                                                    <p class="p-id">RX-02417</p>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>Metformin 500mg</td>
                                         <td>HealthPlus Pharmacy</td>
                                         <td><span class="status assigned">Assigned</span></td>
                                         <td>05 Oct, 8:16</td>
                                     </tr>
                                     <tr>
-                                        <td>Ama Boateng</td>
+                                        <td>
+                                            <div class="patient">
+                                                <div class="initials">AB</div>
+                                                <div>
+                                                    <p class="p-name">Ama Boateng</p>
+                                                    <p class="p-id">RX-02416</p>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>Atorvastatin 20mg</td>
                                         <td>Top-Up Pharmacy</td>
                                         <td><span class="status fulfillment">In fulfillment</span></td>
                                         <td>04 Oct, 16:55</td>
                                     </tr>
                                     <tr>
-                                        <td>Joseph Tetteh</td>
+                                        <td>
+                                            <div class="patient">
+                                                <div class="initials">JT</div>
+                                                <div>  
+                                                    <p class="p-name">Joseph Tetteh</p>
+                                                    <p class="p-id">RX-02415</p>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>Losartan 50mg</td>
                                         <td>Ernest Chemists</td>
                                         <td><span class="status delivery">Out for delivery</span></td>
@@ -155,7 +199,10 @@
                             </div>
                             <div class="ring-row">
                                 <div class="ring">
-                                    <div class="ring-inner">86%</div>
+                                    <div class="ring-inner">
+                                        <strong class="yie">86%</strong>
+                                        <span class="on-track">On track</span>
+                                    </div>
                                 </div>
                                 <div>
                                     <p class="big">102 active</p>
